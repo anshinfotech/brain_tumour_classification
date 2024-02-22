@@ -7,7 +7,7 @@ prediction_decoded = {0 : 'No Tumour', 1: 'Glioma Tumour', 2: 'Meningioma Tumour
 
 st.title('Brain Tumor Detection and Classification')
 st.image('1651474032780.jpg')
-img = st.file_uploader('Upload your image', type=['png', 'jpg'])
+img = st.file_uploader('Upload your image', type=['jpg'])
 model = tf.keras.models.load_model('TUMOR_FINAL_MODEL.h5')
 
 if img is not None:
